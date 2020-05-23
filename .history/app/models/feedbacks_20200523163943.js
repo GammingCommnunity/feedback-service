@@ -12,8 +12,8 @@ const SCHEMA = MONGOOSE.Schema({
 });
 const FEEDBACK = MONGOOSE.model("Feedbacks", SCHEMA);
 
-const CREATE = (res, accountId, message, info, successCallback) => {
-	FEEDBACK.create(
+const CREATE = (accountId, message, info, successCallback) => {
+	ACCOUNT.create(
 		{
 			accountId: accountId,
 			message: message,
