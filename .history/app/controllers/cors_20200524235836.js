@@ -1,3 +1,4 @@
+const FeedBacks = require("../models/feedbacks");
 const RESPONSE_STATUS = require("../../config/response_status");
 
 module.exports = (req, res, fields, files) => {
