@@ -12,10 +12,6 @@ module.exports = class {
 		this.res = res;
 	}
 
-	setHeaders(key, value){
-		this.res.setHeaders(key, value);
-	}
-
 	end(
 		status = RESPONSE_STATUS.FAILED
 			? RESPONSE_STATUS.FAILED

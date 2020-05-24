@@ -5,7 +5,6 @@ module.exports = (req, res, fields, files) => {
 	if (fields.content) {
 		const accountId = fields.accountId ? fields.accountId : -1;
 		FeedBacks.create(res, accountId, fields.content, '', () => {
-			res.setHeader("Access-Control-Allow-Origin", "*");
 			res.end(
 				RESPONSE_STATUS.SUCCESSFUL,
 				null,
@@ -13,7 +12,6 @@ module.exports = (req, res, fields, files) => {
 			)
 		});
 	} else {
-		res.setHeader("Access-Control-Allow-Origin", "*");
 		res.end(
 			RESPONSE_STATUS.FAILED,
 			null,
