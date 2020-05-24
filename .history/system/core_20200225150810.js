@@ -2,7 +2,6 @@ const WRITE_LOG = require("../config/app").WRITE_LOG;
 const RESPONSE_CLASS = require("./response");
 const FORMIDABLE = require("formidable");
 const LOG = require("./log");
-const RESPONSE_STATUS = require("../config/response_status");
 const URL_PARSE = require("url").parse;
 
 exports.getRequestListener = (
